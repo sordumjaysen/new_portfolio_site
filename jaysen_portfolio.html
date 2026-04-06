@@ -1,0 +1,3113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jaysen Sordum Barikpoa</title>
+  <meta name="description" content="Certified IT Support Specialist, Project Manager, and digital professional specialising in technology, creativity, and strategic planning.">
+  <meta name="keywords" content="Jaysen Barikpoa, IT Support, Project Manager, Digital Marketing, Social Media, Content Creator, Virtual Assistant">
+
+  <!-- Favicon -->
+  <link href="assets/img/Asset 3-101.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS (inlined from main.css) -->
+  <style>
+/**
+
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0078ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0078ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+.accent-background {
+  --background-color: #0078ff;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #3393ff;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  --background-color: #000000;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 32px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+@media (min-width: 1200px) {
+  .navmenu {
+    padding: 0;
+  }
+
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navmenu li {
+    position: relative;
+  }
+
+  .navmenu>ul>li {
+    white-space: nowrap;
+    padding: 15px 14px;
+  }
+
+  .navmenu>ul>li:last-child {
+    padding-right: 0;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    font-size: 15px;
+    padding: 0 2px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+
+  .navmenu>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .navmenu a:hover:before,
+  .navmenu li:hover>a:before,
+  .navmenu .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navmenu li:hover>a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover>a {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+
+  .navmenu .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navmenu>ul {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .social-links {
+  margin-top: 20px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--default-color);
+  border-color: var(--default-color);
+}
+
+.footer .credits {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer .credits a {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 92px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 76px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .container {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.about .skills-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+}
+
+.about .progress {
+  height: 36px;
+  display: block;
+  background: none;
+  border-radius: 0;
+  margin-top: 15px;
+}
+
+.about .progress .skill {
+  color: var(--default-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.about .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.about .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+
+.about .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+.about .about-me h4 {
+  font-size: 28px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.about .about-me h4:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.about .about-me p {
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 30px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 18px;
+  border-bottom: 5px solid var(--surface-color);
+  height: 100%;
+}
+
+.services .service-item .icon {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  margin: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1365px) {
+  .services .service-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+  }
+
+  .services .service-item:hover h3 {
+    color: var(--accent-color);
+  }
+}
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats {
+  position: relative;
+  padding: 120px 0;
+}
+
+.stats img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.stats:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 40%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.stats .container {
+  position: relative;
+  z-index: 3;
+}
+
+.stats .stats-item {
+  padding: 30px;
+  width: 100%;
+}
+
+.stats .stats-item span {
+  font-size: 48px;
+  display: block;
+  color: var(--default-color);
+  font-weight: 700;
+}
+
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 16px;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing .pricing-item {
+  border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 60%);
+  width: 100%;
+  height: 100%;
+  padding: 0 0 15px 0;
+}
+
+.pricing .pricing-item h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pricing .pricing-item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.faq .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.faq .content p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.faq .faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.faq .faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 80px 0;
+  position: relative;
+}
+
+.testimonials:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.testimonials .testimonials-bg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.testimonials .container {
+  position: relative;
+  z-index: 3;
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  text-align: center;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.testimonials .testimonial-item .stars {
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  opacity: 0.5;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--default-color);
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-wrap {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--accent-color);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 40%);
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .swiper-wrapper {
+  height: auto;
+}
+
+.portfolio-details .swiper-button-prev,
+.portfolio-details .swiper-button-next {
+  width: 48px;
+  height: 48px;
+}
+
+.portfolio-details .swiper-button-prev:after,
+.portfolio-details .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.portfolio-details .swiper-button-prev:hover:after,
+.portfolio-details .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 575px) {
+
+  .portfolio-details .swiper-button-prev,
+  .portfolio-details .swiper-button-next {
+    display: none;
+  }
+}
+
+.portfolio-details .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.portfolio-details .portfolio-info ul strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 14px;
+}
+
+.portfolio-details .portfolio-info .btn-visit {
+  padding: 8px 40px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.portfolio-details .portfolio-info .btn-visit:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  margin-bottom: 50px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid var(--background-color);
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding-top: 20px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.portfolio-details .portfolio-description .testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 0 0 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details .services-list {
+  background-color: var(--surface-color);
+  padding: 10px 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  margin-bottom: 20px;
+}
+
+.service-details .services-list a {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  margin: 20px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: 0.3s;
+}
+
+.service-details .services-list a.active {
+  color: var(--heading-color);
+  font-weight: 700;
+  border-color: var(--accent-color);
+}
+
+.service-details .services-list a:hover {
+  border-color: var(--accent-color);
+}
+
+.service-details .services-img {
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service-details p {
+  font-size: 15px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
+
+/* Portfolio image uniform height fix */
+.portfolio .portfolio-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Article title shown below image */
+.portfolio-article-title {
+  padding: 10px 4px 4px 4px;
+}
+
+.portfolio-article-title a {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--heading-color);
+  line-height: 1.4;
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-article-title a:hover {
+  color: var(--accent-color);
+}
+
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#hero" class="logo d-flex align-items-center">
+        <h1 class="sitename">Jaysen</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ============================================================
+         Hero Section
+    ============================================================ -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/imagee.png" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Jaysen S. Barikpoa</h2>
+        <p><span class="typed" data-typed-items="Research Analyst, IT Support Specialist, IT Project Manager, Customer Care Service, Digital Marketer, Executive Assistant, Content Creator"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- ============================================================
+         About Section
+    ============================================================ -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile1-img.jpg" class="img-fluid" style="border-radius: 50%;" alt="Jaysen Sordum Barikpoa">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Jaysen Sordum Barikpoa</span></p>
+                <p style="text-align: justify;"><strong>Profile: </strong> <span>Research Analyst, IT Support Specialist, IT Project Manager, Customer Care Service, Content Creator, Social Media Manager, Executive Assistant</span></p>
+                <p><strong>Email: </strong> <span><a href="mailto:sordumjaysen@gmail.com">sordumjaysen@gmail.com</a></span></p>
+                <p><strong>Phone: </strong> <span>+2348034007831, +2290161910121</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Research Analysis</span> <i class="val">98%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Social Media Management</span> <i class="val">98%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Content Creation</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Customer Care Service</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Project Management</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>IT Support Specialist</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Executive Assistant</span> <i class="val">88%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Digital Marketing</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p style="text-align: justify;">
+                Hello! I'm <b>Jaysen</b>—a certified <b>IT Support Specialist, Project Manager,</b> and multifaceted digital professional who loves blending
+                <b>technology, creativity, and strategic planning</b> to help brands grow, connect, and thrive in today's dynamic digital landscape.
+              </p>
+              <p style="text-align: justify;">
+                My expertise spans a diverse range of services, including:
+              </p>
+              <ul>
+                <li>IT Support &amp; Technical Troubleshooting</li>
+                <li>Content Creation &amp; Copywriting</li>
+                <li>Digital Marketing &amp; SEO</li>
+                <li>Social Media Management &amp; Strategy</li>
+                <li>Customer Support &amp; Virtual Assistance</li>
+                <li>Research Analysis &amp; Data Interpretation</li>
+                <li>Project Management &amp; Agile Coordination</li>
+              </ul>
+              <p style="text-align: justify;">
+                With a solid foundation in <b>IT support, and hands-on experience managing projects from kickoff to delivery</b>, I make sure systems run smoothly behind
+                the scenes while keeping teams on track and goals in sight. Whether it's troubleshooting networks one minute or steering a cross-functional campaign the next,
+                <b>I combine a detail-oriented mindset with clear communication to hit milestones and exceed expectations.</b>
+              </p>
+              <p style="text-align: justify;">
+                I thrive where <b>tech meets storytelling</b>—crafting compelling content,
+                architecting seamless workflows, and steering projects that deliver measurable results. If you're looking to elevate your brand, streamline operations,
+                or launch your next big idea, let's team up and make it happen!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- ============================================================
+         Resume Section
+    ============================================================ -->
+    <section id="resume" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>My Educational Background and Work Experience.</p>
+      </div>
+
+      <div class="container">
+
+        <!-- Full-width Summary -->
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Jaysen Sordum Barikpoa</h4>
+              <p style="text-align: justify;"><em>I specialize in digital marketing, content creation,
+                social media management, SEO, research analysis, virtual assistance, and customer care, helping brands grow with strategy and creativity.</em></p>
+              <ul class="list-unstyled row">
+                <li class="col-md-6"><i class="bi bi-geo-alt me-2" style="color:var(--accent-color)"></i>Gbedjeromede, Rue M2, 664A Cotonou, Benin</li>
+                <li class="col-md-6"><i class="bi bi-geo-alt me-2" style="color:var(--accent-color)"></i>Lekki Phase 1, Lagos, Nigeria</li>
+                <li class="col-md-6"><i class="bi bi-telephone me-2" style="color:var(--accent-color)"></i>+2348034007831, +2290161910121</li>
+                <li class="col-md-6"><i class="bi bi-envelope me-2" style="color:var(--accent-color)"></i><a href="mailto:sordumjaysen@gmail.com">sordumjaysen@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle Buttons -->
+        <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-5 mb-3 mb-md-0 text-center">
+            <button class="resume-toggle-btn w-100" data-target="education-panel">
+              <i class="bi bi-mortarboard-fill me-2"></i>Education
+            </button>
+          </div>
+          <div class="col-md-5 text-center">
+            <button class="resume-toggle-btn w-100" data-target="experience-panel">
+              <i class="bi bi-briefcase-fill me-2"></i>Professional Experience
+            </button>
+          </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="row justify-content-center mt-3 mb-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-md-5 text-center">
+            <a id="resume-download-link"
+               href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMSAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YzIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNSAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Db250ZW50cyAxMSAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTIgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoYW5vbnltb3VzKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwMzE1MTg1MjMwKzAwJzAwJykgL0NyZWF0b3IgKGFub255bW91cykgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwMzE1MTg1MjMwKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKHVuc3BlY2lmaWVkKSAvVGl0bGUgKHVudGl0bGVkKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Db3VudCAyIC9LaWRzIFsgNiAwIFIgNyAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDQ3NTQKPj4Kc3RyZWFtCkdhdWBXPkJBTj4mcTgwMVIkVldvLV5eUFdAXDQsV2ZPZVcwKyUqP0FWdClUNiIzYXJzWWUmSVs8SVhsMVNybDpuS1hlTmU7Um1WYDlqYls3XHBNZHAnN09gZkRgOGciSDowc1NCTEw9a0JMNFBeQD9UIyRsJkBrYFJcbGJyL15jPlxbYlokcjZXYTpXZGdyLXU2cVxuZldBUFpuJUJoTkJxOkNEOjVBOGEhMjJzU2FUdF1bb25mLj9DaEAvUl05K19SZiRLLTAiWyxwTzVTbUNZRzU1My5mQ11GQl9wYVs2XDc3UjtESDJbb1wpYGlqZU9ASUYvP1FiaWtDMEdLRkkvPHMqSUtSRklcW2pnXCtJWlUyZE8ycVQhRityN19jUjhVL1hQJSk9PT1hJ2Y+QFBfOD9OLHE0akkxdScvJS5ocidDVEVVZi8mNTBcSSJeckItdVgwTSguYjgiRmo4X2NKKGRFMz9XdG1MUUdNLCM9P3JNbicuPm5uQXMzRSFkY3RoJjVmXisyNWZiYUldaD1QI2NBLWshcihtUjwicUFqLmVGUiIuJS9hLVtbWjEvP1UxUEQnJyNxLVApPykhMT9Oa04oVCs9Nj04QT1wYD4/OkdiW3E4YkonJmVTcEM1OFFLWkEvYi9jQXNLcURoJTwwPiMoL2VmLjBUREUoNDs+M0tfYEE9IUEuJmUkc0wvZnFHM1BPXUgsKiZqRWRhMUddV0RDKWw2bGxrUTxISUJLbEcwWUo4U3VFJD1pYW42UVknXUo6WmBhOW5HV15bL15nb01pZ0M/TFFBYXVJbTlXKFldQnJrRW9BL1IxUzM1ZyEkXjRLZFc7Vyc6KmZGQlNyKXVOIWExNzwnKydBKFxVKTM8RTM4cj1DV3A0XTxlW2M7KzRMNzl1LzlfLjRVKF0vbkowQCs7Xi9xWHBoNz9RMC9CMDV1UkA/Wi49Y2dvSk5FRjldLl9vXyVwNF9MOGZSJjpdISxqLTVMQipPciYybWZuJl0pKm8wUmZdJSxvbHU7N0VqZDo7OTpgJ2UkMzovLUQ5bztwXGhUMSU7YGhMJFRbIypCXVdtaC5yJGN1RiMnKmVRJmt0Z2txX2M+ajhlKmRcL0dfU1tAMzVbSTczOjQ9OHI7YCVZNGdaSVosUUEjPTQ1XD5TLilpYTE3OURIQFEkcnEiLGEjSUBqOzxrY3VaXlpuQCZjLDlGKUxcOzRdOCNMOzJEUiFXMlNGWlpBdGoyMzxuZnM1YUNXb0Q0RjA9VV9eQUtMRWY7RVNHPihFXDQybDpwKFk1QlBfOShoTjQ8W1ZZMlRmSjxAWm49XidtcT8rdEQhMTgoJ140bEoiWVNfQF45WlI8aDZjOkdMUjEmTltgbHQmT107SlMpTUFNUyVXJ0UzNkwuTF5ycDwuQGNQN25OMztFdUU0JFc/KmpQY0IxZ2tyVCg3YDJkKEw7aGVtcT5obyUsaFVFUCwjUF9aPGxrbSgyU19iUFI5OVVTWExONlg9XmVaLzgvREMiLi8ranBCPmBoTFA7LjJNTlxgIlVhcFZLdVFNJUVTdUpuKVQlSjRoTl4/W0FsJ0xgTWk6Z0s8MWEvM1YhLnBCQ01YcDNtWVIsI01UaVFiZmpvYChMN2clUUVqJSlYXUJSaCNqJGprXTAnc0VfamAwMFtHZl5yTVghUF9nYTpiVGZoYTticmchRWQhSGksRHUnZWY6UldmJHEpaCUnalJVSkdTMj9eanBkQF1USHNzMXJhWUcqVl9iWj5WSFFLbVQldE5kaTJEOTl1VCtiYlUiOyREcFpSSERQI2JvYnI+QSdgdS0yJFVcUCtcSVNlYzpoTSlDSF86JksubjxRKjQ8KmNFalcvSG9JXlZfb2BqMHBvWSJvKHBhSlQoVig4aWxFZlJ0VzdoQnNkKkhaOkItJilFOi02QDlnWStyRERZMkA9JW07O3QqbEZzKllpSyo5Zi5XQStoLWtOcyxTZmtkVWNZPjZyIWhFU2RcRy4xWzQ4MV4uK0xBLE0nJjRUIzBmcShRS1tNLT5DZT5qU29OR0I+QU5Mc2NUTlovV3A0YyRJLVksTUE/cjBgL3JeTVtQb1pwNSYnXHRjPDhtYCJfc09xWUQ9PTglWEw1MD4hRkM1YzxJY3FzNUZvNFVfUHRsQT1pUWhwYmJoNkMqLU4oI1YlbEM2QnJBVCgtM0Qma24qRmcuRipJWjNOX05eRUBhRVFOUlZlczpQMEpMTkg6ak8lbCZLbDltclNSXilCIkZSSzonMEcmViQyVj4oNCxqNThwa2c6IV91LU5gJDxzSm1kInRfX08qT0FXbT48IVFfT1JAYkVBVXBzSzw5NlptWzNpbXEoIT0hTkZJWjFZNDY4dThadSYocGw0NGskXSE9TmBVNGRMSjlxMl10bHJfTF9JOWZuUVNxLmc2SG1aX15tQkFtLS9KLDhuTillKCVwbE04LGlqcl1MXT1wRF43QCRGMUUnWExGW1lWWDpiQlRDPkUyVFJTX0lUPSxfLGdcam4uUUNzYlNyX0QsW2ZDUV8lcEgpKmlDJDg6J1tJTVBUOC5eOmg2RW5rLCNiUiRsMUgnaiswTWRQYV1HMUlbYWNhZUM0bD5razlsRHVvZGJoU19fZigvbmtQPEZ1SipyLlohJDtaQW9wMHNUPVJwcUwhKFFnLXE6WiNXXzJtPmQqUnBPXjoubjE1MFYrTDFUZVVsSlIyQzhiI0cuQFskLD8lVW0uLl41NlEuT0krXWlAQG1FMWA/MGpFTFoxPFouUjRbNjVhSWosN2lUbk8wb19aIyo2byZcNiIrQmFcIyhINEllJ3E2ViRfWlUqXGo4WHVJS0h1TFYnJVZvL0IzaFVFWSJpcD8iPjBXXixaXzgxM2U+akU4TzVOSUsjUytOZSpCbVIycDk6UFIjc2gqKVBnIk5bXTNNJy1zXyRKO2JDJlpCQFJcZC9lT1RKP2xecDluWC5ZQ0JLQVdAZDooOFw5UCtvb0pHPTQ7aSM7YSEpZVktXSVoaDZsZVxEQVhvRCJSMSxYRXRFOmdYbVFCXXVtQmcuSTZCYidhZlAxUitbWXMjWGUmbHBJK2sjKyVlTUUtIkdsNSklRTlUMD8iW05dUkA0Iz5iblg0RDttM0tNT1QhNWI8cyFALXFMLCFFI3NiMjh0YlxPXGpxSWY/MjA7XkpuOl42IV5SNmApVlQnPWBEMzZsV1hnR1VLZGs9KixRVVtCcmUhVFgoV1dVVS9PPlpUWUcvYTNOV1EoTlJOXTgpJGdjOEU5TTVwRVM3Y2FJS0s1dSkvWnB0XkFZcj1vLTddJjFfOUl0LGk0XGVWKU1SIjhLKU4jTzo9bVpYWk1QQktYdVoyNDo7YEJcZTBiNFNLNWs9Pj5ObC9sLHNWPSswdTdqJ3IsTXBIOlF0O2VcJiQpb2s1K2xWNTMydFxfMS1zWUY8XFNYMyMsMmIjU1RzMEpDIVgiImxqX1IiTFtlJkpzQGMlWmVqMyUlYTh0bm1pPVhHVDhQNGJJdCRLYCZAPDRwIi8mbVVzbSRDcFYtQStdbmF1TjdCRDZsW1VzSE9vXl1DMS4sRVo3aTcnTWdGUUYoQXFwOEJVTnNaRk0yWk5xbm5Ja1c3Ry9PTCRvXjdnZGQkO2lNRkVbPSxyJXFlQUxfPy88MC9AQV1xJHVnZSFSUW9IW2BBbElMTmJ0PWViaGZ0VEVZcy0rVHM7PEdlQS0tVlREUz8+LTBzQjUtUC5dKHRRNnBcLyMtREl0byVMWzUnN0NtISZPT3JQcmNlLGRVJTtkaSQvPUwucXU+RiI/LGFEY2MwY2M3MjgrZilROyUuM0p0aUwpVT5xL1s2ISFNWWoocUhxT0ApUSVxRlI3V29SPjk4KEgpYDg3cV5LNWE1OVcuVk9gRzFickI7bThfSkFaLk1pSSppWTVFJmxpQl5jX0RbQWQoV1JEbkcnN19RJGRpKGpqZ2coQ0g4PCFsNWxoWjNOOCcnXFkwPF8hO1M9Xjs4VlE4YjFVWUExV2xIOGhHKmtpXVAsT3JhaEh1Lz1oJ0ppJTlaaTZybltYLldrOlwhKD5aZmcxXzglJCZRQ0VOb1F0MkdoWCZKaVMuJ1RULnVdZVNrclE4I19pP00wLyVJcTkoO3QnMUVgOTYkUFFjS1dYUHNDKD9XP11uVitqPjJXYGRKckFAQ24qIWAwZyluZTIjPVkmOl5OdU87NHBXOzNnJDE/WisjZmhOQDtHPDRBLU0jSEBLR0NuWyIrQzwyKCsuL3JlKVAlUmddPEkhJi9NLUElI19ILWl1YT8uP2NjVCczLW1dcEhTSE5jaHNyRGNpcHNNRVxuSjZQSmlTLj9ZVnUpXWUxM0YkX2A6KGghXC47aTYpdXQvQ0RiYDRCXUl1RSQyISMpN05NUHUtRF5dJCcnVj5nNmFJXnU1PW01big3KkFaaXE6Kjspb1hRayo0b2oyWXVlJGdVZWNral91RjAlJ2leaGsrdUJrOVVuNytoRVxYcnBkSmJTakEwRjgwWE5cIi1dL0lTT2AjVGFAP09YMFZTLXBHcWZWa0k1K0pwLlJEUGVROS5GO04obDwlcElfPDhVI2xSUkZpQTBrP2AyWS45O2JaRS1LWjcqVjMmZ0AvVFdGaU11KnVHdS1NQD4oSkU+MlF0T1FJW2k4NTFlYGY8TS5QXUsrLGZoUE1hQV4yUkdwVSdGWUFacjlwXy5kOjVIWUd0KG1KKVcmdExxLGRVQFc5U1RRYGA6Yi5bU3VaO040TUNEJCVXcThkZ11WIlkqTGZfYEFpaU5jQWhOQTYnXjcxPCM1IiRHN2xea0drTTpAUzZnJjFeZyFjQUxqOD5fSVgzJiRyVXJEVV0rYE9YMFBETEhCUEVLQF5jTExrRj83KCZWRTB1NEBLYFMrbyhXTTpzInFEImppMDtyaipjWCRZYVVRIygtbDJaX2FCX2kjSWckVjopR2ZaaSM6YWZQJ1FKYCtRTDVsUEAoIV89bztXTUhBcXVcWkREOThRNWY8NmU+KltlOUppKWpjcFU4MEpgUUZFMjhYLkBsR0w/aTJFSlU6UGFBREdMUz1iMzVqU2NfNDJmNiZeYlYxTGhTYjlmSGpAPz88QDlKN2w8T2xXX1VONSwtSjRpanQwOmJWOkhSQCRTLT8xbEdTQlAsMFxScFtpQFs6IVNUPT1NJjlhPytmQEEhKTRKZS1MRjglK0EqVShgKHNxO2ghTSgkPjZQWi8obUNiRGonSzddYDUqUVpLSGsiTVhNTjZRaEthXnNPM0tQN21bTi5CSGo3S19pMmsxPSQ9ak11a0ZITUFVVWlnXyYrPjJUKytlLVk6TDhHJDltJkVZIUk0TFAiRjUoWFRRamRVTVJmXGRGYDFYXiVlMlc1S0VePWc3clNnXys0ci8vRTJgVkxdXT5rJEhJJy88X1tWLEc1L0lcLG9xbDAxY1wtMiFxXCxeVVonNSNtRFhAJjEpJ1xhTnJXOUdmPDUzQDtYVlBYP1lFZj0/QjJKJlk2U0BxcUcxJSE+QU9RbmsiNF4zMDQkRkg2bGk8UDJoPl5ldEllaWwnNUcoKDFHQER0OyszdDJSc0ZuZEV0JEZdWmVZLVYmIk0sR15CTUFfLlkkOUBwOF5dYmJwVGVAXiVIZDdzTWwycTd0K0s4XlNhPk5RNyZtXm89JV5MSypWTi8vYlR0J2BnOy44RHUwX3F1RUdlKjcyNWtQS3U5TWYtTzplJ1NEMDRqV15ZaWlxJTluJDZENFU0IlE5Zz40UlQjPXNAa28sRS9rN2B1Pys7aGkuW3UsajdTck1fSFw2JEA6RFg0VEdVMS47RCcjUClFa2M9JVA9JHNJSVAjQFFdUHEwLk1YVjZFc3FKPEknSGRycTNHOl82I3AlUXE3KFg+aidPNmRoJjAzX10zYzYtK2tJQGBnNkc9X29nL2spRDdSX1ZPYVc8IWtaXz4ycDNCJFFgTTtVTytBNFZvYyw4YTduS1BGb2tVL2ZnL1FgJS9eZSUzJE5nbEtiWVw/ZUkjLUFKKW9ORz5TIUkiMWNoNTBcIV9tLWtzbCxRN2kmQWFcMzo1YkBOTUElNkRlJlEsP1JIUSRLRDwiITJvY0NeaSdcUTlgMStUOTRYaSs/bks0OiZnbCphLixoSkxpJCh1ODYkQW9TV3JIO0MnKChVQjxSaT1hVzpNX01IIiRwPWYkOkFQIiNkY0VCJ2QnVzBORFZpWipUNGNIMl4hZnBta3Q/YTRPcmhHTURgNEFLblVNY0ZgQC5Ibmo/LSlxTEgsISY8SCY5YmE6NjNXOydQcXByNG1EdChfIT1JPU1cR34+ZW5kc3RyZWFtCmVuZG9iagoxMiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxNzUxCj4+CnN0cmVhbQpHYXUwQz8jTFdBJ1JlPDJcMV8mdF03X3BBIjJoaGI2QmJAb1puUTclPEY8dC8hT2pqQ1s2OjxWclVHNyQhS3MxMVU4ZU10anFJV2BIZD1fSCZsOFwmXyNJMTxVQFgmcF1GPzdwLkBGJltXamFBb2ROQ1FMMmQ0SiFmcUVeQmtkREViZVxnW05rOW1RPVUoXkdbJEwyV2RgRWM2RmYtZkhOSyRFUkhnbmtwaDI7UTBXXmxzKWtrZi9TdG0yclNTNkotXmk1dHNyWSsmWkApSHFdKVElZD5PYSliRU1zVDddbW9xQzloRTwsI3JpN2VhYlBhSj1EXC51WkAoQTRCaExMI2NKWFozb1I4RSddM25iP1crSy9bX2w2PEkrOSZMWWVMMkk1MlQkOVA6NyUyXk1mWkd0amI7T2MwaEdyIV1hV05ATyExZ2BscUAhJXNtMl5eLXEqNVdrKyE6OVA+IlBmb29PUTxtRycxZmI+cjtrRzUyQSVwSUohI0RuTWBPQmhNKkRrTz0nTXVMLXMoTUgtRjEqIyVdJWpsPTJdcEs4IV5GQjZJYkpjO0xzOFQyNVgxP05YLyU0XEZPJF9FXDFwVC1Lb0lkXmNYR0onPzkqNDJYaSIiWl9ULExYJT9OJzRISU46UjopZCZeRUZFcjtiMEQ/Vkw2JEFcJjJTWWtBVk9oVDtZJiQ7Yj1TYzQoVEU7JzAxWDVAMl8mMGNQWXBIX2IqXjklQTlrYkosJVdiQHE1az83K0ojKzBONFJERFBccy0zOmg7Rm1XPi8jPFFqb282YTJNKlZqbV8lWmFsXCxbJkcqbG85JydYIyFGci0lUkN1SW9vZD05LnIrMmouYG1BYiIsZC5lNSE1SVlCUUBocXMvc25kMzpwXXQ8SjsuaCxuQDVFdUInRUJlPkNjbSgiMERMP0FdRSFIKUJqOkY6LlQiNlBAOU1NamgtNWZQbCVYci5SYlxzME1zQmVWQnNlcyssO0liXUgiTHUjcDc/M1ZoWmkqR0AkdENqWVouNFRlJWQnRlNGJ2hnXU88YGVtSDNBJGhkaj8hbERGOighXDI1JnEhcGpIUi0kaGtOL3BSRSg7LjRKZ0NKPSNwJ0NnNlU1VjlpNms4cldZa2IyX08tTWAyVy1SPW9pXVJBNFNKaTpvRDNWTXMhYi8/LnF1ZzxdJGtVSiVEVFlzWilBdSMjOUJsJEMmXmJHbWdELVNjSUBXSls7MkYia1w8OTJfT149YilFJlhZLm9VcjxVYmhdK2lUUiIhO2E3R0soXzw+Y2xYJlxPJyE4RFdQVW1nYTM2Oj1mI1I3KW9iUThYNyJmTHMzbit1YkZwai1uKyFETFtPLTVeZCNdcVVrTyNpNytJSGhCVDwiWlg4O1k4Q0pVREYiW0QwTDJRL3FWYHReXT4nUGBqL0BIX0pdMkNbPzIzJk0vWEZ1O0JJLEY6KlxKSSgtOkxlQmRjUnU2I3NYVlVUcGcyckQmKkpXKWhyPSUjX004YVBeUlk5WUVcUlAqMW1TW1shQ2pSTClVNE8jNXQrTFpCUy5NSmonLjNiK3RRdSRNI1JAJE1XMydoMCIzRlpjWDRkWTMnTlBxTDRdUmAmVilOa2VOOV1fJFpWbWt1WmRRTSpEbDtMKGU1YSk+KCtNOCZOYTlvakcpN3MpU2skcSF1QDdtMmlUWCdqLkxEWElwc09sWDsvZUY+J1E2NSlyXD0vPDktJmFOaF1fP05ZU1dlSkZoUkVITzNwLEZTUlgwVFJdMzkoLkZGMjxsJWYmTiowO2NaPCpdOFdMNWBvMlZqPVYsREE2bSJUUlNqOzc8NVc2UjtGKmVpX0xoUjAuLDJTOVc+IkA1RE1BaW5fR3FmSzBmU15MbGkmZ1hMKVhuIUFqQiQ6MksjI0k2N3FAZTVEQXFoN0IpNGQpdTRWcSZEVWliKUwwY1QkZSE3a0xFIS81XS1yTG8+N3BCTjZuNj4jTChDLzwzbTRwbGJiMixaIVcoUHEkMDQ8KD8+U3FHRShxXVNWY0hhRiNvRU4qKTwwVixDRVtEQGhUYyFqbl4+clkhV21odWsoM0BxI3JPJVNZT0ZGRl9tITVlREcxKUxOS2FtVV0uSHBVRWBaViJ0VGdYIV1kNVE3SVNpIyFkNWpvVm87WU1JUXRfT2Isbj5jIUhEVVNXKmM9UVNWbzpZdGNvcj9UOlYkMGpULGFpbV5bOmUhQjlMcTE9ZjgpKlQwWFNbLEtzNGBbUFBtXS90X19NViloIkZiImc4XTkuR1U9M1swbUpZJD8oXlRzI0JELHRQKClXZlJpJjswNS5uU1FlJmhXVmVqQT9+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAwMTIyIDAwMDAwIG4gCjAwMDAwMDAyMjkgMDAwMDAgbiAKMDAwMDAwMDM0MSAwMDAwMCBuIAowMDAwMDAwNDU2IDAwMDAwIG4gCjAwMDAwMDA1NzUgMDAwMDAgbiAKMDAwMDAwMDc4MCAwMDAwMCBuIAowMDAwMDAwOTg1IDAwMDAwIG4gCjAwMDAwMDEwNTQgMDAwMDAgbiAKMDAwMDAwMTMxNSAwMDAwMCBuIAowMDAwMDAxMzgxIDAwMDAwIG4gCjAwMDAwMDYyMjcgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8MDFmMGVmMTY1YjM4MDI0MWY2NWUzMGMxMGU2OTI1MmQ+PDAxZjBlZjE2NWIzODAyNDFmNjVlMzBjMTBlNjkyNTJkPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA5IDAgUgovUm9vdCA4IDAgUgovU2l6ZSAxMwo+PgpzdGFydHhyZWYKODA3MAolJUVPRgo="
+               download="Jaysen_Sordum_Barikpoa_Resume.pdf"
+               class="resume-download-btn d-inline-block text-decoration-none">
+              <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- Education Panel (hidden by default) -->
+        <div id="education-panel" class="resume-panel" style="display:none;">
+
+          <!-- ── Education ── -->
+          <h3 class="resume-title mt-2">Education</h3>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="resume-item">
+                <h4>Post Graduate Diploma</h4>
+                <h4>Information Technology</h4>
+                <h5>Oct 2025 &ndash; Present</h5>
+                <p><em>National Open University of Nigeria | Lagos, Nigeria</em></p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="resume-item">
+                <h4>Post Graduate Diploma</h4>
+                <h4>Environmental Microbiology</h4>
+                <h5>2018 &ndash; 2019</h5>
+                <p><em>Rivers State University | Port Harcourt, Nigeria</em></p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="resume-item">
+                <h4>Higher National Diploma</h4>
+                <h4>Science Laboratory Technology (Biology/Microbiology)</h4>
+                <h5>2013 &ndash; 2014</h5>
+                <p><em>Rivers State Polytechnic | Bori, Nigeria</em></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Certifications ── -->
+          <h3 class="resume-title mt-4">Certifications</h3>
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div class="resume-item">
+                <h4>Google Project Management</h4>
+                <h4>Professional Certificate</h4>
+                <h5>May 2025</h5>
+                <p><em>Coursera</em></p>
+                <p style="text-align: justify;">Project lifecycles and methodologies, Agile and Scrum practices, Stakeholder management and communication,
+                  Scope definition and work breakdown structures, Schedule planning and critical path analysis, Budgeting and cost estimation,
+                  Risk assessment and response planning, Quality assurance and control, Change management procedures,
+                  Team leadership and collaboration tools.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Google IT Support</h4>
+                <h4>Professional Certificate</h4>
+                <h5>Apr 2025</h5>
+                <p><em>Coursera</em></p>
+                <p style="text-align: justify;">IT support, computer networking, systems administration, troubleshooting, software and package management,
+                  Windows and Linux operating systems, virtual machines, VPNs, network security, encryption, and data recovery.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>IT Help Desk for Beginners</h4>
+                <h5>Dec 2025</h5>
+                <p><em>LinkedIn Learning</em></p>
+                <p style="text-align: justify;">IT help desk operations, ticket lifecycle, hardware and software troubleshooting, end-user communication, escalation procedures, remote desktop support, and documentation best practices.</p>
+                <p><strong>Skills:</strong> Technical Support, Help Desk Support, Ticket Management, End-User Communication, Remote Troubleshooting, IT Documentation.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Zendesk Customer Service</h4>
+                <h4>Professional Certificate</h4>
+                <h5>Dec 2025</h5>
+                <p><em>LinkedIn Learning &amp; Zendesk</em></p>
+                <p style="text-align: justify;">Customer service best practices using Zendesk. Top skills: Relationship Building, Troubleshooting, Customer Service.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Google Cybersecurity</h4>
+                <h4>Professional Certificate</h4>
+                <h5>In Progress</h5>
+                <p><em>Coursera</em></p>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+
+              <div class="resume-item">
+                <h4>HubSpot Social Media Marketing</h4>
+                <h4>Certificate</h4>
+                <h5>2025</h5>
+                <p><em>HubSpot Academy</em></p>
+                <p style="text-align: justify;">Social media strategy, audience listening, content calendar management, organic and paid reach optimisation, community engagement, performance measurement and ROI analysis.</p>
+                <div class="academy-badge" style="margin-top: 10px;">
+                  <a href="https://app-eu1.hubspot.com/academy/achievements/2xwty7vs/en/1/jaysen-sordum-barikpoa/social-media-marketing" title="Social Media Marketing" target="_blank">
+                    <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/3455be9288f04df98a551a21bfe5fa52.png" style="width: 120px; height: auto;" alt="HubSpot Social Media Badge" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <h4>CSCMP Supply Chain Foundations</h4>
+                <h4>Customer Relationship Management Professional Certificate</h4>
+                <h5>Ongoing</h5>
+                <p><em>LinkedIn Learning &amp; CSCMP</em></p>
+                <p style="text-align: justify;">Customer relationship management within supply chain operations. Top skills: Customer Experience, Customer Value Creation, Customer Service.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Using AI for Customer Service Managers</h4>
+                <h5>Ongoing</h5>
+                <p><em>LinkedIn Learning (PMI Registered)</em></p>
+                <p style="text-align: justify;">Applying AI tools in customer service management. Top skills: Artificial Intelligence for Business, Customer Service Management, AI.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>IBM IT Scrum Master</h4>
+                <h4>Professional Certificate</h4>
+                <h5>In Progress</h5>
+                <p><em>Coursera</em></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- /Education Panel -->
+
+        <!-- Experience Panel (hidden by default) -->
+        <div id="experience-panel" class="resume-panel" style="display:none;">
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div class="resume-item">
+                <h4>Lead Management Specialist</h4>
+                <h5>Aug 2025 &ndash; Nov 2025</h5>
+                <p><em>BPO Homes | Remote</em></p>
+                <ul>
+                  <li>Guided <strong>10+ property owners daily</strong> through full <strong>platform onboarding and listing activation process</strong>.</li>
+                  <li>Conducted <strong>outbound calls</strong> and structured follow-ups to improve <strong>listing completion</strong> and <strong>platform adoption</strong>.</li>
+                  <li>Acted as <strong>primary point of contact</strong>, resolving <strong>onboarding blockers</strong> and reducing delays.</li>
+                  <li>Maintained accurate <strong>CRM records</strong>, ensuring timely follow-ups and clean <strong>data reporting</strong>.</li>
+                  <li>Collaborated cross-functionally with <strong>operations teams</strong> to resolve issues quickly and improve the <strong>customer journey</strong>.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Assistant Product Manager</h4>
+                <h5>2025</h5>
+                <p><em>CardLumi | Remote</em></p>
+                <ul>
+                  <li>Improved MVP success rate by 20% by drafting product documentation and conducting 10 user interviews.</li>
+                  <li>Improved market share by 5% through executing competitor analysis to refine positioning and go-to-market strategies.</li>
+                  <li>Delivered stakeholder presentations, aligning expectations and gathering feedback.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Research Analyst</h4>
+                <h5>2022 &ndash; 2025</h5>
+                <p><em>Study Plus Hub LTD | Remote | Part-Time</em></p>
+                <ul>
+                  <li>Analysed research data and prepared reports on environmental microbiology.</li>
+                  <li>Curated and reviewed studies on pollution control and microbial solutions.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Virtual Assistant Intern</h4>
+                <h5>2025</h5>
+                <p><em>InternPulse | Remote</em></p>
+                <ul>
+                  <li>Managed schedules, handled correspondence, streamlined and supported virtual team operations, improving efficiency by 15%.</li>
+                  <li>Assisted in administrative tasks to enhance operational efficiency and maintain effective communication with clients and team members.</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+
+              <div class="resume-item">
+                <h4>Content Creator / Social Media Strategist</h4>
+                <h5>2024</h5>
+                <p><em>GC Fort | Cotonou, Benin</em></p>
+                <ul>
+                  <li>Developed content for newly established social media platforms to enhance the company's profile and attract a larger customer base. Managed social media accounts and designed targeted marketing campaigns to drive sales growth.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Content Writer / Developer</h4>
+                <h5>Apr 2019 &ndash; Jan 2023</h5>
+                <p><em>Cinfores Limited | Hybrid</em></p>
+                <ul>
+                  <li>Developed and structured educational content for the <strong>BRAINFRIEND App</strong> and eLearning platform, improving student engagement.</li>
+                  <li>Wrote and edited teaching scripts, video scripts, and animation scripts used for e-notes and learning animations.</li>
+                  <li>Delivered video presentations and recorded teaching sessions uploaded to the platform for pupils and students.</li>
+                  <li>Hosted webinars and seminars on <strong>Facebook, YouTube, and Zoom</strong>, highlighting the role of technology in modern education.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Customer Care Representative / Tech Support</h4>
+                <h5>2022 &ndash; 2024</h5>
+                <p><em>Diverse Ventures | Cotonou, Benin</em></p>
+                <ul>
+                  <li>Resolved an average of 50+ customer inquiries daily, achieving a 95% satisfaction rating.</li>
+                  <li>Provided technical support, maintaining and troubleshooting essential equipment, which improved overall system reliability.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div><!-- /Experience Panel -->
+
+      </div>
+
+      <!-- Resume Toggle Styles & Script -->
+      <style>
+        .resume-toggle-btn {
+          background: var(--surface-color);
+          color: var(--heading-color);
+          border: 2px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+          border-radius: 50px;
+          padding: 14px 30px;
+          font-size: 16px;
+          font-weight: 600;
+          font-family: var(--heading-font);
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .resume-toggle-btn:hover {
+          border-color: var(--accent-color);
+          color: var(--accent-color);
+        }
+        .resume-toggle-btn.active {
+          background: var(--accent-color);
+          border-color: var(--accent-color);
+          color: #ffffff;
+        }
+        .resume-download-btn {
+          background: transparent;
+          color: var(--accent-color);
+          border: 2px solid var(--accent-color);
+          border-radius: 50px;
+          padding: 10px 28px;
+          font-size: 15px;
+          font-weight: 600;
+          font-family: var(--heading-font);
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .resume-download-btn:hover {
+          background: var(--accent-color);
+          color: #ffffff;
+        }
+        .resume-panel {
+          animation: fadeInPanel 0.35s ease;
+        }
+        @keyframes fadeInPanel {
+          from { opacity: 0; transform: translateY(12px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Print / PDF styles ── */
+        @media print {
+          /* Hide everything except the resume section */
+          body * { visibility: hidden; }
+          #resume, #resume * { visibility: visible; }
+          #resume { position: absolute; top: 0; left: 0; width: 100%; }
+
+          /* Show both panels when printing */
+          .resume-panel { display: block !important; }
+
+          /* Hide buttons */
+          .resume-toggle-btn,
+          .resume-download-btn { display: none !important; }
+
+          /* Clean print typography */
+          #resume { font-size: 11pt; color: #000; }
+          #resume h2 { font-size: 20pt; }
+          #resume h3 { font-size: 14pt; }
+          #resume h4 { font-size: 11pt; }
+          #resume h5 { font-size: 10pt; background: #eee !important; }
+          #resume a  { color: #000; text-decoration: none; }
+          .academy-badge { display: none !important; }
+
+          /* Page settings */
+          @page { margin: 15mm; size: A4; }
+        }
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var btns   = document.querySelectorAll('.resume-toggle-btn');
+          var panels = document.querySelectorAll('.resume-panel');
+
+          /* Make sure both panels start hidden */
+          panels.forEach(function (p) { p.style.display = 'none'; });
+
+          btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              var targetId = this.getAttribute('data-target');
+              var panel    = document.getElementById(targetId);
+              var isOpen   = (panel.style.display === 'block');
+
+              /* Hide all, deactivate all */
+              panels.forEach(function (p) { p.style.display = 'none'; });
+              btns.forEach(function (b)   { b.classList.remove('active'); });
+
+              /* Toggle: open only if it was closed */
+              if (!isOpen) {
+                panel.style.display = 'block';
+                this.classList.add('active');
+              }
+            });
+          });
+        });
+
+        function downloadResume() {
+          /* Show both panels before printing */
+          document.querySelectorAll('.resume-panel').forEach(function (p) {
+            p.dataset.wasHidden = (p.style.display === 'none') ? 'true' : 'false';
+            p.style.display = 'block';
+          });
+
+          window.print();
+
+          /* Restore panel state after print dialog closes */
+          setTimeout(function () {
+            document.querySelectorAll('.resume-panel').forEach(function (p) {
+              if (p.dataset.wasHidden === 'true') {
+                p.style.display = 'none';
+              }
+            });
+          }, 1000);
+        }
+      </script>
+
+    </section><!-- /Resume Section -->
+
+    <!-- ============================================================
+         Services Section
+    ============================================================ -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>These are the services I offer.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity"></i></div>
+              <h3>Digital Marketing</h3>
+              <p style="text-align: justify;">I help fintech, SaaS, e-commerce, and Fashion brands scale their online presence with data-driven marketing strategies, including:</p>
+              <ul>
+                <li>Social Media Marketing &amp; Management</li>
+                <li>SEO &amp; Content Marketing</li>
+                <li>Paid Advertising (Google Ads, Meta Ads)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast"></i></div>
+              <h3>Social Media Management</h3>
+              <p style="text-align: justify;">I create, manage, and optimize social media accounts to build brand awareness, engage audiences, and drive conversions. My services cover:</p>
+              <ul>
+                <li>Content Creation &amp; Strategy</li>
+                <li>Community Engagement</li>
+                <li>Analytics &amp; Performance Tracking</li>
+                <li>Growth &amp; Lead Generation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h3>Virtual Assistance</h3>
+              <p style="text-align: justify;">I provide professional support to businesses, helping streamline operations and increase productivity. My services include:</p>
+              <ul>
+                <li>Email &amp; Calendar Management</li>
+                <li>Data Entry &amp; Organization</li>
+                <li>Customer Care &amp; Live Chat Assistance</li>
+                <li>Administrative &amp; Project Support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles"></i></div>
+              <h3>Brand Strategy &amp; Growth Consulting</h3>
+              <p style="text-align: justify;">I help businesses refine their brand identity and marketing approach for long-term success. My services include:</p>
+              <ul>
+                <li>Brand Positioning &amp; Messaging</li>
+                <li>Competitor &amp; Market Research</li>
+                <li>Conversion Rate Optimization (CRO)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h3>IT Support &amp; Troubleshooting</h3>
+              <p style="text-align: justify;">With a background in tech support, I offer basic IT support for businesses, ensuring seamless operations. Services include:</p>
+              <ul>
+                <li>Hardware &amp; Software Troubleshooting</li>
+                <li>Network &amp; Router Configuration</li>
+                <li>Technical Documentation &amp; Training</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h3>Project Management</h3>
+              <p style="text-align: justify;">Ensuring your projects run smoothly from start to finish—on time, on budget, and with clear communication every step of the way. My services include:</p>
+              <ul>
+                <li>Project planning &amp; schedule development</li>
+                <li>Resource allocation &amp; budget management</li>
+                <li>Risk identification &amp; mitigation strategies</li>
+                <li>Agile framework implementation</li>
+                <li>Performance monitoring &amp; KPI tracking</li>
+                <li>Project closure</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- ============================================================
+         Stats Section
+    ============================================================ -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="assets/img/stats-bg1.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Hours of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Articles</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- ============================================================
+         Portfolio Section
+    ============================================================ -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A selection of my work across page management, product management, branding, and articles.</p>
+      </div>
+
+      <div class="container">
+
+        <!-- Portfolio Filter Buttons -->
+        <ul class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter="filter-app">Page Managed</li>
+          <li data-filter="filter-product">Project/Product Managed</li>
+          <li data-filter="filter-branding">Branding</li>
+          <li data-filter="filter-books">Articles</li>
+        </ul>
+
+        <!-- Portfolio Grid -->
+        <div class="row gy-4 portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/managed-page1.png" class="img-fluid" alt="LUMIGIFTCARD">
+            <div class="portfolio-info">
+              <h4>LUMIGIFTCARD</h4>
+              <p>Instagram, Facebook and Tiktok Page Management and Content Strategy.</p>
+              <a href="assets/img/portfolio/managed-page1.png" title="LUMIGIFTCARD" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.instagram.com/lumigiftcard/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <img src="assets/img/portfolio/product_managed_1.png" class="img-fluid" alt="Cardlumi App">
+            <div class="portfolio-info">
+              <h4>Cardlumi App</h4>
+              <p>Assisted Project Manager in delivering the Cardlumi app on schedule and in scope.</p>
+              <a href="assets/img/portfolio/product_managed_1.png" title="Cardlumi App" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+
+          <!--BRANDING SECTION STARTS HERE-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <img src="assets/img/portfolio/branding1.png" class="img-fluid" alt="Eztec Limited">
+            <div class="portfolio-info">
+              <h4>Eztec Limited</h4>
+              <p>Brand Identity design of the business</p>
+              <a href="assets/img/portfolio/branding1.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.instagram.com/ezteclimited/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <img src="assets/img/portfolio/branding2.png" class="img-fluid" alt="Alora">
+            <div class="portfolio-info">
+              <h4>ALORA</h4>
+              <p>Brand Identity and UI/UX design for the application</p>
+              <a href="assets/img/portfolio/branding2.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <img src="assets/img/portfolio/branding3.png" class="img-fluid" alt="AHIMÍN">
+            <div class="portfolio-info">
+              <h4>AHIMÍN</h4>
+              <p>Brand Identity and UI/UX design for the application</p>
+              <a href="assets/img/portfolio/branding3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <img src="assets/img/portfolio/branding4.png.png" class="img-fluid" alt="TALVÉRA">
+            <div class="portfolio-info">
+              <h4>TALVÉRA</h4>
+              <p>Brand Identity and UI/UX design for the platform</p>
+              <a href="assets/img/portfolio/branding4.png.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+
+          <!--BRANDING SECTION ENDS HERE-->
+
+          <!--ARTICLES BEGINS HERE-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article1.jpg" class="img-fluid" alt="Agentic AI Article">
+            <div class="portfolio-info">
+              <h4>Agentic AI Article</h4>
+              <p>Agentic AI: How Autonomous Agents Could Transform Small Businesses in Africa</p>
+              <a href="assets/img/portfolio/article1.jpg" title="Article 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/pulse/agentic-ai-how-autonomous-agents-could-transform-small-barikpoa-0kftf" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/pulse/agentic-ai-how-autonomous-agents-could-transform-small-barikpoa-0kftf" target="_blank">Agentic AI: How Autonomous Agents Could Transform Small Businesses in Africa&mdash;With Realistic Expectations</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article2.png" class="img-fluid" alt="Ghana Cedi article">
+            <div class="portfolio-info">
+              <h4>Ghana Cedi vs Nigerian Naira</h4>
+              <p>Ghana Cedi vs Nigerian Naira: Lessons from West Africa's Currency Struggles</p>
+              <a href="assets/img/portfolio/article2.png" title="Article 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/posts/jaysen-sordum-barikpoa_the-article-is-about-the-parallel-decline-activity-7374519234229522432-wmRx" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/posts/jaysen-sordum-barikpoa_the-article-is-about-the-parallel-decline-activity-7374519234229522432-wmRx" target="_blank">Ghana Cedi vs Nigerian Naira: Lessons from West Africa's Currency Struggles</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article3.png" class="img-fluid" alt="Remote Work vs. Office">
+            <div class="portfolio-info">
+              <h4>Remote Work vs. Office</h4>
+              <p>Remote Work vs. Office: Finding the Hybrid Balance</p>
+              <a href="assets/img/portfolio/article1.jpg" title="Article 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/pulse/remote-work-vs-office-finding-hybrid-balance-jaysen-sordum-barikpoa-ftfxf" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/pulse/remote-work-vs-office-finding-hybrid-balance-jaysen-sordum-barikpoa-ftfxf" target="_blank">Remote Work vs. Office: Finding the Hybrid Balance</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article4.jpg" class="img-fluid" alt="Cloud Networking Demystified">
+            <div class="portfolio-info">
+              <h4>Cloud Networking Demystified</h4>
+              <p>Cloud Networking Demystified: Mastering Hybrid and Multi-Cloud Strategies for IT Excellence</p>
+              <a href="assets/img/portfolio/article4.jpg" title="Article 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/pulse/cloud-networking-demystified-mastering-hybrid-jaysen-sordum-barikpoa-gatmf" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/pulse/cloud-networking-demystified-mastering-hybrid-jaysen-sordum-barikpoa-gatmf" target="_blank">Cloud Networking Demystified: Mastering Hybrid and Multi-Cloud Strategies for IT Excellence</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article5.png" class="img-fluid" alt="AI in Cybersecurity: Friend or Foe?">
+            <div class="portfolio-info">
+              <h4>AI in Cybersecurity</h4>
+              <p>AI in Cybersecurity: Friend or Foe?</p>
+              <a href="assets/img/portfolio/article5.png" title="Article 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/pulse/ai-cybersecurity-friend-foe-jaysen-sordum-barikpoa-diqvf" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/pulse/ai-cybersecurity-friend-foe-jaysen-sordum-barikpoa-diqvf" target="_blank">AI in Cybersecurity: Friend or Foe?</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <img src="assets/img/portfolio/article6.png" class="img-fluid" alt="Future-Proof Your Career">
+            <div class="portfolio-info">
+              <h4>Future-Proof Your Career</h4>
+              <p>Future-Proof Your Career in the Age of AI</p>
+              <a href="assets/img/portfolio/article6.png" title="Article 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/pulse/future-proof-your-career-age-ai-jaysen-sordum-barikpoa-mudlc" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <div class="portfolio-article-title">
+              <a href="https://www.linkedin.com/pulse/future-proof-your-career-age-ai-jaysen-sordum-barikpoa-mudlc" target="_blank">Future-Proof Your Career in the Age of AI</a>
+            </div>
+          </div>
+
+
+          <!--ARTICLES ENDS HERE-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/managed-page2.png" class="img-fluid" alt="PEDMONIE">
+            <div class="portfolio-info">
+              <h4>PEDMONIE</h4>
+              <p>LinkedIn Page Management and Content Creation with my team</p>
+              <a href="assets/img/portfolio/managed-page2.png" title="PEDMONIE" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.linkedin.com/company/pedmonie/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <img src="assets/img/portfolio/product_managed_2.png" class="img-fluid" alt="Sauce and Spoon">
+            <div class="portfolio-info">
+              <h4>Sauce &amp; Spoon Tablet Rollout</h4>
+              <p>Capstone Project</p>
+              <a href="assets/img/portfolio/product_managed_2.png" title="Sauce &amp; Spoon Tablet Rollout" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/managed-page3.png" class="img-fluid" alt="Montefish Gift Card">
+            <div class="portfolio-info">
+              <h4>MONTEFISH GIFT CARD CENTER</h4>
+              <p>Instagram, Facebook and Tiktok Page Management and Content Strategy.</p>
+              <a href="assets/img/portfolio/managed-page3.png" title="MONTEFISH GIFT CARD CENTER" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://www.instagram.com/montefishgiftcard/?hl=am-et" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+        </div><!-- End Portfolio Grid -->
+
+        <!-- Portfolio Filter Script -->
+        <script>
+          (function () {
+            var activeFilter = '*';
+
+            function applyFilter(filter) {
+              document.querySelectorAll('.portfolio-grid .portfolio-item').forEach(function (item) {
+                if (filter === '*' || item.classList.contains(filter)) {
+                  item.style.display = '';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            }
+
+            document.querySelectorAll('.portfolio-filters li').forEach(function (btn) {
+              btn.addEventListener('click', function () {
+                document.querySelectorAll('.portfolio-filters li').forEach(function (b) {
+                  b.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+                activeFilter = this.getAttribute('data-filter');
+                applyFilter(activeFilter);
+              });
+            });
+
+            /* Show all on load */
+            applyFilter('*');
+          })();
+        </script>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- ============================================================
+         Pricing Section
+    ============================================================ -->
+    <section id="pricing" class="pricing section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing Information</h2>
+        <p>Below is a list of my service rates. Some prices may be negotiable based on project scope and specific requirements.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>IT Support &amp; Troubleshooting</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Project Management</h3>
+              <h4>$599.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Digital Marketing</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Virtual Assistant</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Social Media Management</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Content Creation &amp; Copywriting</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Brand Strategy &amp; Growth Consulting</h3>
+              <h4>$499.00</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- ============================================================
+         FAQ Section
+    ============================================================ -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p style="text-align: justify;">
+                Got questions? Here are some common inquiries about my services, pricing, and how we can work together.
+                If you don't find what you're looking for, feel free to reach out!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>What services do you offer?</span></h3>
+                <div class="faq-content">
+                  <p style="text-align: justify;">I specialize in IT support, IT Project Management, digital marketing, social media management, content creation, executive assistance, and brand strategy.
+                    You can find a detailed list of my services in the services section.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>How do you determine your pricing?</span></h3>
+                <div class="faq-content">
+                  <p style="text-align: justify;">My pricing is based on the scope and complexity of each project. While some rates are fixed,
+                    others may be negotiable depending on your specific needs. Feel free to reach out for a customized quote.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Do you offer one-time projects or long-term contracts?</span></h3>
+                <div class="faq-content">
+                  <p style="text-align: justify;">I provide both! Whether you need a one-time project or ongoing support, I can tailor my services to fit your business goals.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>What industries do you specialize in?</span></h3>
+                <div class="faq-content">
+                  <p style="text-align: justify;">I have extensive experience working with fintech, SaaS, e-commerce, fashion, and personal brands. However, my skills are adaptable to various industries.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>How do I get started?</span></h3>
+                <div class="faq-content">
+                  <p>Simply contact me through the email address or phone number provided, and we'll discuss your needs, goals, and how I can help you achieve them.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3><span class="num">6.</span> <span>Do you offer custom packages?</span></h3>
+                <div class="faq-content">
+                  <p>Yes! If you need a combination of services tailored to your business, I can create a custom package that suits your needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /FAQ Section -->
+
+    <!-- ============================================================
+         Contact Section
+    ============================================================ -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Have a question or need my services? I'd love to hear from you! Reach out, and let's discuss how I can help your business grow.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Gbedjeromede, Littoral Department, Cotonou, Benin</p>
+                  <p>Lekki Phase 1, Lagos, Nigeria</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+2348034007831, +2290161910121</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p><a href="mailto:sordumjaysen@gmail.com">sordumjaysen@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- =============================================
+             Contact Form — uncomment and wire to backend
+        ============================================= -->
+        <!--
+        <form id="contact-form" action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+        -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+  ============================================================ -->
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jaysen Sordum Barikpoa</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://web.facebook.com/jaysensordum" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/digitalwithjaysen/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jaysen-sordum-barikpoa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Main JS (inlined from main.js) -->
+  
+  <!-- Main JS (inlined from main.js) -->
+  <script>
+/**
+
+*/
+
+(function() {
+  "use strict";
+
+  /**
+   * Apply .scrolled class to the body as the page is scrolled down
+   */
+  function toggleScrolled() {
+    const selectBody = document.querySelector('body');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  }
+
+  document.addEventListener('scroll', toggleScrolled);
+  window.addEventListener('load', toggleScrolled);
+
+  /**
+   * Mobile nav toggle
+   */
+  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
+  }
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+  /**
+   * Hide mobile nav on same-page/hash links
+   */
+  document.querySelectorAll('#navmenu a').forEach(navmenu => {
+    navmenu.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+
+  });
+
+  /**
+   * Toggle mobile nav dropdowns
+   */
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+    navmenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
+    });
+  });
+
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
+
+  /**
+   * Scroll top button
+   */
+  let scrollTop = document.querySelector('.scroll-top');
+
+  function toggleScrollTop() {
+    if (scrollTop) {
+      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+  }
+  scrollTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);
+
+  /**
+   * Animation on scroll function and init
+   */
+  function aosInit() {
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', aosInit);
+
+  /**
+   * Init typed.js
+   */
+  const selectTyped = document.querySelector('.typed');
+  if (selectTyped) {
+    let typed_strings = selectTyped.getAttribute('data-typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+
+  /**
+   * Animate the skills items on reveal
+   */
+  let skillsAnimation = document.querySelectorAll('.skills-animation');
+  skillsAnimation.forEach((item) => {
+    new Waypoint({
+      element: item,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = item.querySelectorAll('.progress .progress-bar');
+        progress.forEach(el => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
+        });
+      }
+    });
+  });
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
+
+  /**
+   * Initiate glightbox
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+  /**
+   * Init isotope layout and filters
+   */
+  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+
+    let initIsotope;
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+        itemSelector: '.isotope-item',
+        layoutMode: layout,
+        filter: filter,
+        sortBy: sort
+      });
+    });
+
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+      filters.addEventListener('click', function() {
+        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+        this.classList.add('filter-active');
+        initIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        if (typeof aosInit === 'function') {
+          aosInit();
+        }
+      }, false);
+    });
+
+  });
+
+  /**
+   * Frequently Asked Questions Toggle
+   */
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
+    });
+  });
+
+  /**
+   * Init swiper sliders
+   */
+  function initSwiper() {
+    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+      let config = JSON.parse(
+        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+      );
+
+      if (swiperElement.classList.contains("swiper-tab")) {
+        initSwiperWithCustomPagination(swiperElement, config);
+      } else {
+        new Swiper(swiperElement, config);
+      }
+    });
+  }
+
+  window.addEventListener("load", initSwiper);
+
+  /**
+   * Correct scrolling position upon page load for URLs containing hash links.
+   */
+  window.addEventListener('load', function(e) {
+    if (window.location.hash) {
+      if (document.querySelector(window.location.hash)) {
+        setTimeout(() => {
+          let section = document.querySelector(window.location.hash);
+          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+          window.scrollTo({
+            top: section.offsetTop - parseInt(scrollMarginTop),
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    }
+  });
+
+  /**
+   * Navmenu Scrollspy
+   */
+  let navmenulinks = document.querySelectorAll('.navmenu a');
+
+  function navmenuScrollspy() {
+    navmenulinks.forEach(navmenulink => {
+      if (!navmenulink.hash) return;
+      let section = document.querySelector(navmenulink.hash);
+      if (!section) return;
+      let position = window.scrollY + 200;
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
+        navmenulink.classList.add('active');
+      } else {
+        navmenulink.classList.remove('active');
+      }
+    })
+  }
+  window.addEventListener('load', navmenuScrollspy);
+  document.addEventListener('scroll', navmenuScrollspy);
+
+})();
+  </script>
+
+</body>
+</html>
